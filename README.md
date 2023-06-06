@@ -1,3 +1,3 @@
 # Personal-Website
 
-hdjskdhfsfs
+A personal website to pratice and learn HTML, CSS and Jacascript.
