@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
     <title>Logan's Personal Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +37,7 @@
         </div>
     </section>
     <section class="about-section" id="about">
-        <div class="about-text">
+        <div class="about-text hidden">
             <h1>About Me</h1>
             <p>I recently completed my sophomore year at the University of Rochester, and
                 I am currently looking for internship and work opportunities in the technology or finance/economics sector, both in the United States and New Zealand.</p>  
@@ -70,34 +71,56 @@
                 <p>CSS</p>
             </div>
         </div>
-        <div class="project-part">
+        <div class="project-part hidden">
             <h1>Projects</h1>
-            <div class="project-indiv">
-                <h4><q>FindUrParty</q> iOS App</h4>
-                <p>(Under Development)</p>
-                <p>Swift iOS Development</p>
+            <a href="#">
+                   <div class="project-indiv">
                 <div class="proj-image">
-                    <a href="#"><img src="photos/iphones.png" alt="iOS"></a>
+                    <img src="photos/iphones.png" alt="iOS">
+                    
                 </div>
-            </div>
-            <div class="project-indiv">
-                <h4>Personal Website</h4>
-                <p>Web Development</p>
-                <div class="proj-image">
-                    <a href="index.html" target="_blank"><img src="photos/Screen Shot 2023-06-06 at 6.48.52 PM.png" alt="Personal Website"></a>
+                <div class="proj-content">
+                    <h4><q>FindUrParty</q> iOS App <br>(Under Development)</h4>
+                    <ul>
+                        <li>Swift iOS Development</li>
+                        <li>Remote Collaboration</li>
+                    </ul>
                 </div>
-            </div>
+            </div>     
+            </a>
+            <a href="index.html" target="_blank">
+                <div class="project-indiv">
+                    <div class="proj-image">
+                        <img src="photos/Screen Shot 2023-06-06 at 6.48.52 PM.png" alt="Personal Website">
+                    </div>
+                    <div class="proj-content">
+                        <h4>Personal Website</h4>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>HTML, CSS and Javascript</li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <h1>Relevant Coursework</h1>
+            <ul>
+                <li>CSC171 - Introduction to Computer Science</li>
+                <li>CSC172 - Data Structures and Algorithms</li>
+                <li>MATH150 - Discrete Mathematics</li>
+            </ul>
+            <p></p>
+            <p>All Courses were completed with an A grade</p>
         </div>
     </section>
     <section class="resume-section" id="resume">
         <!-- EDUCATION RESUME SECTION -->
-        <div class="resume-partition">
-            <div class="resume-opening">
-                <div class="resume-header">
-                    <h2>Resume</h2>
-                    <p>My Education and Experience</p> 
-                </div>
+        <div class="resume-opening hidden">
+            <div class="resume-header">
+                <h2>Resume</h2>
+                <p>My Education and Experience</p> 
             </div>
+        </div>
+        <div class="resume-partition hidden">  
             <div class="resume-header"><h2>Education</h2></div>
             <div class="resume-block">
                 <div class="block-opening">
@@ -154,7 +177,7 @@
             </div>
         </div>
         <!-- WORK EXPERIENCE PART OF THE PAGE -->
-        <div class="resume-partition">
+        <div class="resume-partition hidden">
             <div class="resume-header"><h2>Work Experience</h2></div>
             <div class="resume-block">
                 <div class="block-opening">
@@ -191,7 +214,7 @@
                 </div>
         </div>
         <!-- ACTIVITIES RESUME -->
-        <div class="resume-partition">
+        <div class="resume-partition hidden">
             <div class="resume-header"><h2>Activities and Leadership</h2></div>
             <div class="resume-block">
                 <div class="block-opening">
@@ -243,7 +266,7 @@
             </div>
         </div>
         <div class="extralink">
-            <a class="newlink" href="LoganResume26Jan.pdf">Download Resume PDF</a>
+            <a class="newlink" href="Files/LoganResume26Jan.pdf">Download Resume PDF</a>
             <a class="newlink" href="mailto:logankm2014@gmail.com">Get in Touch</a>
         </div>
     </section>
