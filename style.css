@@ -112,7 +112,7 @@ nav {
 .about-section {
     background-size: cover;
     background-color: rgb(0, 0, 0);
-    background-image: linear-gradient(rgba(0, 0, 0),rgba(0, 0, 0)), url(photos/FullSizeRender.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.944),rgba(0, 0, 0, 0.95)), url(photos/FullSizeRender.png);
     position: relative;
     height: 100vh;
     color: white;
@@ -147,7 +147,7 @@ nav {
 .project-part {
     position: absolute;
     width: 500px;
-    right: 10%;
+    left: 50%;
     top: 10%;
 }
 
@@ -223,6 +223,7 @@ nav {
     background-size: cover;
     position: relative;
     color: black;
+    align-items: center;
 }
 
 .resume-opening {
