@@ -64,10 +64,12 @@ nav {
 .main-content h1{
     font-size: 62px;
     transition: 0.3s;
+    white-space: nowrap;
 }
 
 .main-content h1:hover{
     font-size: 68px;
+    white-space: nowrap;
 }
 
 .main-content p {
@@ -75,6 +77,13 @@ nav {
     transition: 0.3s;
     white-space: nowrap;
 }
+
+.main-content p a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
 
 .main-content p:hover {
     font-size: 33px;
@@ -111,7 +120,7 @@ nav {
 
 .downward-arrow {
     position: absolute;
-    top: 95vh;
+    bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -125,20 +134,20 @@ nav {
 }
 
 .about-section {
+    display: flex;
+    flex-direction: row;
     background-size: cover;
     background-color: rgb(0, 0, 0);
     position: relative;
-    height: 100vh;
+    height: auto;
     color: white;
 }
 
 .about-text {
-    position: relative;
+    flex: 0.5;
     color: white;
     text-align: left;
-    top: 10%;
-    left: 15%;
-    width: 400px;
+    margin-left: 5%;
 }
 
 .about-section h1 {
@@ -159,16 +168,15 @@ nav {
 }
 
 .project-part {
-    position: absolute;
-    width: 500px;
-    left: 50%;
-    top: 10%;
+    flex: 0.5;
+    margin-bottom: 20px;
 }
 
 .project-part .project-indiv {
     display: inline-block;
     position: relative;
     margin-right: 40px;
+    margin-bottom: 40px;
     width: 200px;
     height: 200px;
     border-radius: 1%;
