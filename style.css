@@ -59,12 +59,22 @@ nav {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+    width:90%;
 }
 
+@media (max-width: 767px) {
+    .main-content {
+        width: 90%;
+    }
+
+    .main-content h1 {
+      font-size: 10px;
+    }
+  }
+
 .main-content h1{
-    font-size: 62px;
+    font-size: 50px;
     transition: 0.3s;
-    white-space: nowrap;
 }
 
 .main-content h1:hover{
@@ -75,7 +85,6 @@ nav {
 .main-content p {
     font-size: 30px;
     transition: 0.3s;
-    white-space: nowrap;
 }
 
 .main-content p a {
@@ -135,52 +144,55 @@ nav {
 
 .about-section {
     display: flex;
-    flex-direction: row;
     background-size: cover;
     background-color: rgb(0, 0, 0);
-    position: relative;
     height: auto;
     color: white;
+}
+
+.about-text, .project-part {
+    flex: 1;
+    padding: 3%;
 }
 
 .about-text {
-    flex: 0.5;
     color: white;
     text-align: left;
-    margin-left: 5%;
 }
 
 .about-section h1 {
-    padding-bottom: 20px;
-    padding-top: 20px;
     color: lightblue;
+    margin-bottom: 5%;
 }
 
-.about-text p {
-    padding-bottom: 10px;
+.about-section p {
     size: 30px;
+    margin-bottom: 5%;
 }
 
-.about-text img {
+/* .about-text img {
     width: 80px;
     height: auto;
     border-radius: 100%;
-}
+} */
 
 .project-part {
-    flex: 0.5;
-    margin-bottom: 20px;
 }
 
-.project-part .project-indiv {
+.project-indiv {
     display: inline-block;
     position: relative;
-    margin-right: 40px;
-    margin-bottom: 40px;
     width: 200px;
     height: 200px;
+    margin-bottom: 5%;
+    margin-right: 5%;
     border-radius: 1%;
     overflow: hidden;
+}
+
+.project-indiv a {
+    text-decoration: none;
+    color: black;
 }
 
 .project-indiv .proj-image,
@@ -262,6 +274,11 @@ nav {
     color: grey;
 }
 
+.resume-section li {
+    font-size: 100%;
+    margin-bottom: 5%;
+}
+
 .resume-section ul {
     list-style-type: none;
 }
@@ -340,14 +357,16 @@ nav {
 
 .skill-indiv {
     display: inline-block;
-    padding-right: 40px;
-    padding-top: 20px;
     text-align: center;
+    width:10%;
+    padding: 5%;
+    overflow: auto;
 }
 
 .skill-indiv img {
     border-radius: 0;
-    width: 40px;
+    width: 100%;
+    align-items: center;
     height: auto;
     padding-bottom: 5px;
 }
