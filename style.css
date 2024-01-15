@@ -252,6 +252,11 @@ nav {
     transition-delay: 0.3s;
 }
 
+.project-part a {
+    color: transparent;
+    text-decoration: none;
+}
+
 .resume-section {
     background-color: white;
     background-size: cover;
